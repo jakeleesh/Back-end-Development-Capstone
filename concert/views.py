@@ -37,6 +37,25 @@ def photos(request):
     }]
     return render(request, "photos.html", {"photos": photos})
 
+
+def signup(request):
+    if request.method == "POST":
+        username = request.POST.get("username")
+        password = request.POST.get("password")
+        try:
+            user = User.objects.filter(username=username).first()
+            if user:
+                return render(request, "signup.html", {"form": SignUpForm, "message": "user already exist"})
+            else:
+                user = User.objects.create(
+                    username=username, password=make_password(password))
+                login(request, user)
+                return HttpResponseRedirect(reverse("index"))
+        except User.DoesNotExist:
+            return render(request, "signup.html", {"form": SignUpForm})
+    return render(request, "signup.html", {"form": SignUpForm})
+
+
 def login_view(request):
     pass
 
