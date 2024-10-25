@@ -1,6 +1,6 @@
 # IBM Back-end Capstone Application
 
-This is the Django website for the band. It stores URLs of pictures from past events.
+This is the Django website for the band. Connects to pictures and song microservices.
 
 ## Description
 
@@ -11,6 +11,8 @@ This is the Django website for the band. It stores URLs of pictures from past ev
 - Create the songs page that lists all the titles of the songs.
 - Craete the photos page that displays pictures from past events.
 - Allow users to log in and see concerts.
+- Use Docker to containerize Django application.
+- Deploy on IBM Kubernetes Services (IKS).
 
 ## Installation
 
@@ -29,10 +31,8 @@ curl -s -o /dev/null -w "%{http_code}" http://localhost:8000
 
 python manage.py createsuperuser
 ```
-
-
-
-
+## Visuals
+![Capstone Architecture](https://github.com/user-attachments/assets/6f65f541-fca8-48be-9bc4-46c6a5b56a23)
 
 
 
