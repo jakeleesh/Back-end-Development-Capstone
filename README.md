@@ -1,6 +1,8 @@
 # IBM Back-end Capstone Application
 
 This is the Django website for the band. Connects to pictures and song microservices.
+[Photos Microservice](https://github.com/jakeleesh/Back-End-Development-Pictures)
+[Songs Microservice](https://github.com/jakeleesh/Back-End-Development-Songs)
 
 ## Description
 
