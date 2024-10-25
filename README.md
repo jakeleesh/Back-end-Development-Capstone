@@ -1,3 +1,55 @@
+# IBM Back-end Capstone Application
+
+This is the Django website for the band. It stores URLs of pictures from past events.
+
+## Description
+
+- Developed using Python and Django.
+- Create models.
+- Migrate the model to create tables in the SQLite database.
+- Implement controllers to send data to pre-defined templates.
+- Create the songs page that lists all the titles of the songs.
+- Craete the photos page that displays pictures from past events.
+- Allow users to log in and see concerts.
+
+## Installation
+
+Use the script to install virtual environment.
+```bash
+cd /Back-end-Development-Capstone
+bash ./bin/setup.sh
+```
+
+## Usage
+```bash
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+curl -s -o /dev/null -w "%{http_code}" http://localhost:8000
+
+python manage.py createsuperuser
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Lab
 
 1.  Clone git repo: `git clone https://github.com/ibm-developer-skills-network/sfvih-Back-end-Development-Capstone.git`
