@@ -57,7 +57,7 @@ The **Main Application** allows users to:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/dealership-review-website.git](https://github.com/jakeleesh/Back-end-Development-Capstone.git
+   git clone https://github.com/jakeleesh/Back-end-Development-Capstone.git
    cd dealers
    ```
 
